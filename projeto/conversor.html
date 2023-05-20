@@ -14,7 +14,7 @@
 
 <body>
 
-    <img src="./assets/logo 1.png" alt="logo ">
+    <img class="logo" src="./assets/logo 1.png" alt="logo ">
 
     <main>
         <label>
@@ -30,36 +30,35 @@
 
         <label>
             Converter <strong>para</strong>
-            <section>
-                <option>US$
-                    Dólar americano </option>
-                <option>€
-                    Euro</option>
+            <select>
+                <option>US$ Dólar americano </option>
 
-            </section>
+                <option>€ Euro</option>
+
+            </select>
 
         </label>
 
-        <label >
+        <label>
             Valor
-            <input  placeholder="R$10.000,00">
+            <input placeholder="R$ 10.000,00">
 
         </label>
         <button>Converter</button>
 
         <section>
-            <div>
+            <div class="currency-box">
                 <img src="./assets/real.png" alt="Moeda a coverter">
-                <p>Real</p>
-                <p>R$ 0,00</p>
+                <p class="currency">Real</p>
+                <p class="currency-value">R$ 0,00</p>
             </div>
 
-            <img src="./assets/arrow.png" alt="" srcset="Seta">
+            <img class="arrow-img" src="./assets/arrow.png" alt="" alt="Seta">
 
-            <div>
-                <img src="./assets/real.png" alt="Logo moeda convertida">
-                <p>Dolar</p>
-                <p>US$ 0.0</p>
+            <div currency-box>
+                <img src="./assets/dolar.png" alt="Logo moeda convertida">
+                <p class="currency"> Dolar</p>
+                <p class="currency-value">US$ 0.0</p>
             </div>
         </section>
     </main>
