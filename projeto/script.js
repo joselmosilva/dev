@@ -1,34 +1,17 @@
 const convertButton = document.querySelector(".convert-button")
 
-function convertValues(){
-    const inputCurrencyValue = document.querySelector(".input-currency").value
-    const CurrencyValueToConvert = document.querySelector(".currency-value-to-convert")
-    const CurrencyValueConverted = document.querySelector(".currency-value-converted")
 
+function  convertvalues(){
+    const inputCurrencyValue = document.querySelector(".input-currency").value
 
     const dolarToday = 5.2
 
-    const convertdValue = inputCurrencyValue / dolarToday
+    const convertedvalue = inputCurrencyValue / dolarToday 
 
-
-    CurrencyValueToConvert. innerHTML = new Intl.NumberFormat("pt-BR", {
-        style:"currency",
-        currency:"BRL"
-    }).format(inputCurrencyValue)
-
-
-    CurrencyValueConverted. innerHTML = new Intl.NumberFormat("en-US", {
-        style:"currency",
-        currency:"USD"
-    }).format(convertdValue)
-
-
-    
-
-
-
-    
+    console.log("inputCurrencyValue")
 }
 
 
-convertButton.addEventListener("click",convertValues)
+
+
+convertButton.addEventListener("click",  convertvalues)
