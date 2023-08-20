@@ -8,26 +8,26 @@ function convertvalues() {
     const currenyValueToConvert = document.querySelector(".currency-value-to-convert")//valor em real
     const currenyValueConverted = document.querySelector(".currency-value")//outras moedas
 
-    
 
+    
 
     const dolarToday = 5.2
     const euroToday = 6.2
 
-    
 
-    if(currencySelect.valeu =="dolar"){
-        currenyValueConverted.innerHTML = new Intl.NumberFormat("en-US",{
+
+    if (currencySelect.valeu == "dolar") {
+        currenyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
         }).format(inputCurrencyValue / dolarToday)
 
 
     }
-    if(currencySelect.valeu =="euro"){
-        currenyValueConverted.innerHTML = new Intl.NumberFormat("de-DE",{
+    if (currencySelect.valeu == "euro") {
+        currenyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
-            currency:"EUR"
+            currency: "EUR"
         }).format(inputCurrencyValue / euroToday)
 
     }
@@ -40,9 +40,9 @@ function convertvalues() {
     }).format(inputCurrencyValue)
 
 
-   
+  
 
-   
+
 
 
 
